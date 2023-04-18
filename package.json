@@ -1,19 +1,23 @@
 {
-    "name": "node-app",
-    "version": "0.0.0",
-    "scripts": {},
-    "dependencies": {
-        "@apollo/server": "^4.6.0",
-        "class-validator": "^0.14.0",
-        "express": "^4.17.1",
-        "express-graphql": "^0.12.0",
-        "graphql": "^15.8.0",
-        "nodemon": "^2.0.7",
-        "reflect-metadata": "^0.1.13",
-        "type-graphql": "^1.1.1"
-    },
-    "devDependencies": {
-        "@types/node": "^18.15.11",
-        "typescript": "^5.0.4"
-    }
+  "name": "node-app",
+  "version": "0.0.0",
+  "scripts": {
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/index.js"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.6.0",
+    "class-validator": "^0.14.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
+    "nodemon": "^2.0.7",
+    "reflect-metadata": "^0.1.13",
+    "type-graphql": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.4"
+  },
+  "type": "module"
 }
